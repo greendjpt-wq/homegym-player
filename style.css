@@ -7,9 +7,12 @@ margin:0;
 
 /* MENU */
 #menu{
-text-align:center;
-margin-top:8vh;
+    text-align:center;
+    margin-top:8vh;
+    position:relative;
+    z-index:5;
 }
+
 
 .item{
 font-size:38px;
@@ -23,14 +26,18 @@ cursor:pointer;
 
 /* PLAYER */
 #player{
-display:none;
-position:fixed;
-inset:0;
-padding:2vh 3vw;
-box-sizing:border-box;
-grid-template-rows:auto 1fr auto;
-height:100vh;
+    position:fixed;
+    inset:0;
+    padding:2vh 3vw;
+    box-sizing:border-box;
+    grid-template-rows:auto 1fr auto;
+    height:100vh;
+
+    opacity:0;
+    pointer-events:none;
+    display:grid;
 }
+
 
 #top{text-align:center;}
 

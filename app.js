@@ -70,7 +70,9 @@ async function carregarTreino(caminho){
     });
 
     document.getElementById("menu").style.display="none";
-    document.getElementById("player").style.display="grid";
+	document.getElementById("player").style.opacity="1";
+	document.getElementById("player").style.pointerEvents="auto";
+
 }
 
 
