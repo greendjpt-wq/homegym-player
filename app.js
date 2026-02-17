@@ -38,7 +38,8 @@ async function carregarLista(){
     });
 }
 
-carregarLista();
+window.addEventListener("DOMContentLoaded", carregarLista);
+
 
 async function carregarTreino(nome){
 
