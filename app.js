@@ -23,6 +23,7 @@ function play(a){a.currentTime=0;a.play().catch(()=>{})}
 //////////////////// MENU ////////////////////
 
 async function carregarLista(){
+
     let res = await fetch("treinos/index.json");
     let listaTreinos = await res.json();
 
@@ -33,25 +34,45 @@ async function carregarLista(){
         let d=document.createElement("div");
         d.className="item";
         d.innerText=nome.replace(".json","").replaceAll("_"," ");
-        d.onclick=()=>carregarTreino(nome);
+
+        // PASSAR CAMINHO COMPLETO
+        d.onclick=()=>carregarTreino("treinos/"+nome);
+
         lista.appendChild(d);
     });
 }
 
+
 window.addEventListener("DOMContentLoaded", carregarLista);
 
 
-async function carregarTreino(nome){
+async function carregarTreino(caminho){
 
-    const res=await fetch("treinos/"+nome+"?"+Date.now());
-    treino=await res.json();
+    let res = await fetch(caminho);
+    let dados = await res.json();
 
-    duracaoTotalTreino=0;
-    treino.forEach(e=>duracaoTotalTreino+=e.tempo+e.descanso);
+    treino = dados.map(e => ({
+        nome: e.nome || "",
+        grupo: e.grupo || "",
+        equipamento: e.equipamento || "",
+        tempo: Number(e.tempo) || 0,
+        descanso: Number(e.descanso) || 0,
+        estado: e.estado || "Treino",
+        video: e.video || "",
+        Dicas_Tecnica: (e.Dicas_Tecnica ?? "").toString(),
+        Erros_Comuns: (e.Erros_Comuns ?? "").toString(),
+        Cuidados: (e.Cuidados ?? "").toString()
+    }));
+
+    duracaoTotalTreino = 0;
+    treino.forEach(e=>{
+        duracaoTotalTreino += e.tempo + e.descanso;
+    });
 
     document.getElementById("menu").style.display="none";
     document.getElementById("player").style.display="grid";
 }
+
 
 //////////////////// WORKOUT ////////////////////
 
