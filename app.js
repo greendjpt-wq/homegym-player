@@ -24,7 +24,7 @@ function play(a){a.currentTime=0;a.play().catch(()=>{})}
 
 async function carregarLista(){
 
-    let res = await fetch("treinos/index.json");
+    let res = await fetch("treinos/index.json?v=" + Date.now());
     let listaTreinos = await res.json();
 
     let lista = document.getElementById("lista");
@@ -34,21 +34,19 @@ async function carregarLista(){
         let d=document.createElement("div");
         d.className="item";
         d.innerText=nome.replace(".json","").replaceAll("_"," ");
-
-        // PASSAR CAMINHO COMPLETO
-        d.onclick=()=>carregarTreino("treinos/"+nome);
-
+        d.onclick=()=>carregarTreino(nome);
         lista.appendChild(d);
     });
 }
 
 
+
 window.addEventListener("DOMContentLoaded", carregarLista);
 
 
-async function carregarTreino(caminho){
+async function carregarTreino(nome){
 
-    let res = await fetch(caminho);
+    let res = await fetch("treinos/" + nome + "?v=" + Date.now());
     let dados = await res.json();
 
     treino = dados.map(e => ({
@@ -65,15 +63,13 @@ async function carregarTreino(caminho){
     }));
 
     duracaoTotalTreino = 0;
-    treino.forEach(e=>{
-        duracaoTotalTreino += e.tempo + e.descanso;
-    });
+    treino.forEach(e=> duracaoTotalTreino += e.tempo + e.descanso);
 
     document.getElementById("menu").style.display="none";
-	document.getElementById("player").style.opacity="1";
-	document.getElementById("player").style.pointerEvents="auto";
-
+    document.getElementById("player").style.opacity="1";
+    document.getElementById("player").style.pointerEvents="auto";
 }
+
 
 
 //////////////////// WORKOUT ////////////////////
