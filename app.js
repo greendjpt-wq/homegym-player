@@ -66,6 +66,7 @@ async function carregarTreino(nome){
     treino.forEach(e=> duracaoTotalTreino += e.tempo + e.descanso);
 
     document.getElementById("menu").style.display="none";
+	document.getElementById("player").style.display="flex";
     document.getElementById("player").style.opacity="1";
     document.getElementById("player").style.pointerEvents="auto";
 	

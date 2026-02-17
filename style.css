@@ -26,17 +26,19 @@ cursor:pointer;
 
 /* PLAYER */
 #player{
+    display:none;
     position:fixed;
     inset:0;
     padding:2vh 3vw;
     box-sizing:border-box;
-    grid-template-rows:auto 1fr auto;
+
     height:100vh;
 
-    opacity:0;
-    pointer-events:none;
+    /* GRID REAL */
     display:grid;
+    grid-template-rows: 18% 64% 18%;
 }
+
 
 
 #top{text-align:center;}
@@ -52,10 +54,14 @@ color:#aaa;
 }
 
 #middle{
-display:grid;
-grid-template-columns:60% 40%;
-align-items:center;
+    display:grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items:center;
+    justify-items:center;
+    height:100%;
 }
+
+
 
 #video{
 max-width:95%;
@@ -66,8 +72,8 @@ border-radius:18px;
 /* TIMER */
 .ring{
 position:relative;
-width:32vh;
-height:32vh;
+width:min(32vh, 32vw);
+height:min(32vh, 32vw);
 margin:auto;
 }
 
