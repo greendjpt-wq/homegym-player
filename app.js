@@ -68,6 +68,18 @@ async function carregarTreino(nome){
     document.getElementById("menu").style.display="none";
     document.getElementById("player").style.opacity="1";
     document.getElementById("player").style.pointerEvents="auto";
+	
+	// preparar primeiro exercício
+	current = 0;
+	tempo = 0;
+	emExercicio = true;
+	pausado = true;
+	treinoIniciado = false;
+	tempoTreinado = 0;
+	ultimoTick = null;
+
+	atualizarUI();   // ← MOSTRAR logo primeiro exercício
+
 }
 
 
