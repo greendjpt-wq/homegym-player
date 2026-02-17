@@ -23,11 +23,11 @@ function play(a){a.currentTime=0;a.play().catch(()=>{})}
 //////////////////// MENU ////////////////////
 
 async function carregarLista(){
-    const res=await fetch("treinos.json?"+Date.now());
-    const listaTreinos=await res.json();
+    let res = await fetch("treinos/index.json");
+    let listaTreinos = await res.json();
 
-    const lista=document.getElementById("lista");
-    lista.innerHTML="";
+    let lista = document.getElementById("lista");
+    lista.innerHTML = "";
 
     listaTreinos.forEach(nome=>{
         let d=document.createElement("div");
@@ -37,6 +37,7 @@ async function carregarLista(){
         lista.appendChild(d);
     });
 }
+
 carregarLista();
 
 async function carregarTreino(nome){
@@ -211,19 +212,18 @@ function iniciarCoach(e){
 //////////////////// HELPERS ////////////////////
 
 function icone(eq){
-    if(!eq) return "";
+    if(!eq)return"";
+    eq=eq.toLowerCase();
 
-    eq = eq.toLowerCase();
+    if(eq.includes("halter"))return "<img class='icon' src='icons/halteres.svg'>";
+    if(eq.includes("tapete"))return "<img class='icon' src='icons/tapete.svg'>";
+    if(eq.includes("multi"))return "<img class='icon' src='icons/multi.svg'>";
+    if(eq.includes("elast"))return "<img class='icon' src='icons/elastico.svg'>";
+    if(eq.includes("box"))return "<img class='icon' src='icons/box.svg'>";
 
-    let file="peso.svg";
-    if(eq.includes("halter")) file="halteres.svg";
-    if(eq.includes("tapete")) file="tapete.svg";
-    if(eq.includes("multi")) file="multi.svg";
-    if(eq.includes("elast")) file="elastico.svg";
-    if(eq.includes("box")) file="box.svg";
-
-    return "<img class='icon' src='"+BASE_PATH+"icons/"+file+"'>";
+    return "<img class='icon' src='icons/peso.svg'>";
 }
+
 
 
 function format(s){
