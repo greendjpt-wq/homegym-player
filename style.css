@@ -1,0 +1,481 @@
+<<<<<<< HEAD
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    margin:0;
+}
+
+/* MENU */
+#menu{
+    text-align:center;
+    margin-top:8vh;
+}
+
+.item{
+    font-size:38px;
+    padding:18px;
+    margin:12px auto;
+    width:60%;
+    background:#222;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+/* PLAYER LAYOUT */
+#player{
+    display:none;            /* ← importante */
+    position:fixed;
+    inset:0;
+    padding:2vh 3vw;
+    box-sizing:border-box;
+
+    grid-template-rows:auto 1fr auto;
+    height:100vh;
+}
+
+
+#top{
+    text-align:center;
+}
+
+#exercise{
+    font-size:5vh;
+    font-weight:600;
+}
+
+#phase{
+    font-size:2.5vh;
+    color:#aaa;
+}
+
+#middle{
+    display:grid;
+    grid-template-columns:60% 40%;
+    align-items:center;
+    overflow:hidden; /* impede empurrar o fundo */
+}
+
+
+#videoBox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#video{
+    max-width:95%;
+    max-height:60vh; /* limita altura real */
+    border-radius:18px;
+}
+
+
+/* TIMER */
+.ring{
+    position:relative;
+    width:32vh;
+    height:32vh;
+    margin:auto;
+}
+
+#timer{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:9vh;
+    font-weight:bold;
+}
+
+.ring svg{
+    width:100%;
+    height:100%;
+    transform:rotate(-90deg);
+}
+
+.ring-bg{
+    fill:none;
+    stroke:#333;
+    stroke-width:12;
+}
+
+.ring-fg{
+    fill:none;
+    stroke:#00e0ff;
+    stroke-width:12;
+    stroke-linecap:round;
+    stroke-dasharray:596;
+    stroke-dashoffset:596;
+}
+
+#globaltime{
+    text-align:center;
+    margin-top:2vh;
+    font-size:2.3vh;
+    color:#bbb;
+}
+
+#next{
+    text-align:center;
+    font-size:2.8vh;
+    margin-top:0.5vh;
+}
+
+#controls{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+button{
+    font-size:26px;
+    margin:6px;
+}
+
+/* BIG COUNT */
+#bigcount{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22vw;
+    background:rgba(0,0,0,0.75);
+    opacity:0;
+    pointer-events:none;
+    transition:.15s;
+}
+
+#bigcount.show{opacity:1}
+
+/* ICON */
+.icon{
+    height:40px;
+    vertical-align:middle;
+    margin-right:12px;
+    filter:invert(1) brightness(2);
+}
+
+body.work { background:#111; }
+body.rest { background:#063a2d; }     /* verde descanso */
+body.final { background:#5a0000; }    /* últimos 5s */
+
+#bigcount{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22vw;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    transition:.15s;
+}
+
+#bigcount.show{opacity:1}
+
+/* ===== COACH MESSAGES ===== */
+
+.coach{
+    margin-top:1vh;
+    padding:1.2vh 2vh;
+    border-radius:18px;
+    font-size:2.3vh;
+    max-width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    transition:0.3s;
+}
+
+.coach.hidden{
+    opacity:0;
+}
+
+/* cores */
+.coach.dica{
+    background:#003b6f;
+    color:#7fd1ff;
+}
+
+.coach.erro{
+    background:#5a0000;
+    color:#ff9b9b;
+}
+
+.coach.cuidado{
+    background:#5a4a00;
+    color:#ffe38a;
+}
+
+#coachType{
+    font-weight:bold;
+    margin-bottom:0.5vh;
+    font-size:1.9vh;
+    letter-spacing:1px;
+    opacity:0.8;
+}
+
+.tv-bottom{
+    display:grid;
+    grid-template-rows:auto auto;
+    align-content:center;
+    justify-items:center;
+    row-gap:1.2vh;
+    font-size:2.6vh;
+    padding-bottom:2vh;
+}
+
+#coachBox{
+    max-width:70%;
+    max-height:9vh;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#coachText{
+    font-size:2.1vh;
+    line-height:1.25;
+}
+=======
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    margin:0;
+}
+
+/* MENU */
+#menu{
+    text-align:center;
+    margin-top:8vh;
+}
+
+.item{
+    font-size:38px;
+    padding:18px;
+    margin:12px auto;
+    width:60%;
+    background:#222;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+/* PLAYER LAYOUT */
+#player{
+    display:none;            /* ← importante */
+    position:fixed;
+    inset:0;
+    padding:2vh 3vw;
+    box-sizing:border-box;
+
+    grid-template-rows:auto 1fr auto;
+    height:100vh;
+}
+
+
+#top{
+    text-align:center;
+}
+
+#exercise{
+    font-size:5vh;
+    font-weight:600;
+}
+
+#phase{
+    font-size:2.5vh;
+    color:#aaa;
+}
+
+#middle{
+    display:grid;
+    grid-template-columns:60% 40%;
+    align-items:center;
+    overflow:hidden; /* impede empurrar o fundo */
+}
+
+
+#videoBox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#video{
+    max-width:95%;
+    max-height:60vh; /* limita altura real */
+    border-radius:18px;
+}
+
+
+/* TIMER */
+.ring{
+    position:relative;
+    width:32vh;
+    height:32vh;
+    margin:auto;
+}
+
+#timer{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:9vh;
+    font-weight:bold;
+}
+
+.ring svg{
+    width:100%;
+    height:100%;
+    transform:rotate(-90deg);
+}
+
+.ring-bg{
+    fill:none;
+    stroke:#333;
+    stroke-width:12;
+}
+
+.ring-fg{
+    fill:none;
+    stroke:#00e0ff;
+    stroke-width:12;
+    stroke-linecap:round;
+    stroke-dasharray:596;
+    stroke-dashoffset:596;
+}
+
+#globaltime{
+    text-align:center;
+    margin-top:2vh;
+    font-size:2.3vh;
+    color:#bbb;
+}
+
+#next{
+    text-align:center;
+    font-size:2.8vh;
+    margin-top:0.5vh;
+}
+
+#controls{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+
+button{
+    font-size:26px;
+    margin:6px;
+}
+
+/* BIG COUNT */
+#bigcount{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22vw;
+    background:rgba(0,0,0,0.75);
+    opacity:0;
+    pointer-events:none;
+    transition:.15s;
+}
+
+#bigcount.show{opacity:1}
+
+/* ICON */
+.icon{
+    height:40px;
+    vertical-align:middle;
+    margin-right:12px;
+    filter:invert(1) brightness(2);
+}
+
+body.work { background:#111; }
+body.rest { background:#063a2d; }     /* verde descanso */
+body.final { background:#5a0000; }    /* últimos 5s */
+
+#bigcount{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22vw;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    transition:.15s;
+}
+
+#bigcount.show{opacity:1}
+
+/* ===== COACH MESSAGES ===== */
+
+.coach{
+    margin-top:1vh;
+    padding:1.2vh 2vh;
+    border-radius:18px;
+    font-size:2.3vh;
+    max-width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    transition:0.3s;
+}
+
+.coach.hidden{
+    opacity:0;
+}
+
+/* cores */
+.coach.dica{
+    background:#003b6f;
+    color:#7fd1ff;
+}
+
+.coach.erro{
+    background:#5a0000;
+    color:#ff9b9b;
+}
+
+.coach.cuidado{
+    background:#5a4a00;
+    color:#ffe38a;
+}
+
+#coachType{
+    font-weight:bold;
+    margin-bottom:0.5vh;
+    font-size:1.9vh;
+    letter-spacing:1px;
+    opacity:0.8;
+}
+
+.tv-bottom{
+    display:grid;
+    grid-template-rows:auto auto;
+    align-content:center;
+    justify-items:center;
+    row-gap:1.2vh;
+    font-size:2.6vh;
+    padding-bottom:2vh;
+}
+
+#coachBox{
+    max-width:70%;
+    max-height:9vh;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#coachText{
+    font-size:2.1vh;
+    line-height:1.25;
+}
+>>>>>>> a1081ef6fb6f41a2aceb857d7cc4fd57cd5d6b3b

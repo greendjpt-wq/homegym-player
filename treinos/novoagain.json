@@ -1,0 +1,481 @@
+[
+{
+"nome":"Diamond push up",
+"tempo":40,
+"descanso":15,
+"video":"diamondpushup.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":"bicepscurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Crab walk",
+"tempo":40,
+"descanso":15,
+"video":"crabwalk.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Círculos braços",
+"tempo":30,
+"descanso":5,
+"video":"circulosbracos.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Triceps pushdown",
+"tempo":40,
+"descanso":15,
+"video":"tricepspushdown.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Hammer curl",
+"tempo":40,
+"descanso":15,
+"video":"hammercurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Bear crawl",
+"tempo":40,
+"descanso":15,
+"video":"bearcrawl.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Front raise",
+"tempo":40,
+"descanso":15,
+"video":"frontraise.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Prancha curta",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Hammer curl",
+"tempo":40,
+"descanso":15,
+"video":"hammercurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Push up",
+"tempo":40,
+"descanso":15,
+"video":"pushup.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Lateral raise",
+"tempo":40,
+"descanso":15,
+"video":"lateralraise.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Bear crawl",
+"tempo":40,
+"descanso":15,
+"video":"bearcrawl.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":"bicepscurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Cable fly",
+"tempo":40,
+"descanso":15,
+"video":"cablefly.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Ponte glúteo leve",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Rotação ombros",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":"bicepscurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Butterfly Press",
+"tempo":40,
+"descanso":15,
+"video":"butterfly_press.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Marcha no lugar",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Goblet squat",
+"tempo":40,
+"descanso":15,
+"video":"gobletsquat.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Rotação ombros",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Cable fly",
+"tempo":40,
+"descanso":15,
+"video":"cablefly.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Caminhada ponta pés",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":"bicepscurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Prancha",
+"tempo":30,
+"descanso":15,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Push up",
+"tempo":40,
+"descanso":15,
+"video":"pushup.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Inclinações laterais",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Hammer curl",
+"tempo":40,
+"descanso":15,
+"video":"hammercurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Lat pulldown",
+"tempo":40,
+"descanso":15,
+"video":"latpulldown.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Chest press floor",
+"tempo":40,
+"descanso":15,
+"video":"chestpressfloor.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Prancha curta",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"High knees",
+"tempo":40,
+"descanso":15,
+"video":"highknees.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Lat pulldown",
+"tempo":40,
+"descanso":15,
+"video":"latpulldown.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Butterfly Press",
+"tempo":40,
+"descanso":15,
+"video":"butterfly_press.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Bear crawl",
+"tempo":40,
+"descanso":15,
+"video":"bearcrawl.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Front raise",
+"tempo":40,
+"descanso":15,
+"video":"frontraise.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Seated row",
+"tempo":40,
+"descanso":15,
+"video":"seatedrow.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Diamond push up",
+"tempo":40,
+"descanso":15,
+"video":"diamondpushup.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Prancha",
+"tempo":30,
+"descanso":15,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Push up",
+"tempo":40,
+"descanso":15,
+"video":"pushup.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Lunge alternado",
+"tempo":40,
+"descanso":15,
+"video":"lungealternado.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Triceps extension",
+"tempo":40,
+"descanso":15,
+"video":"tricepsextension.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Bear crawl",
+"tempo":40,
+"descanso":15,
+"video":"bearcrawl.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Lat pulldown",
+"tempo":40,
+"descanso":15,
+"video":"latpulldown.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Círculos braços",
+"tempo":30,
+"descanso":5,
+"video":"circulosbracos.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Triceps pushdown",
+"tempo":40,
+"descanso":15,
+"video":"tricepspushdown.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Mountain climber",
+"tempo":40,
+"descanso":15,
+"video":"mountainclimber.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Bent over row",
+"tempo":40,
+"descanso":15,
+"video":"bentoverrow.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Crab walk",
+"tempo":40,
+"descanso":15,
+"video":"crabwalk.mp4",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Kickback",
+"tempo":40,
+"descanso":15,
+"video":"kickback.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Shoulder press",
+"tempo":40,
+"descanso":15,
+"video":"shoulderpress.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":"bicepscurl.mp4",
+"equipamento":"Halteres"
+}
+,
+{
+"nome":"Triceps pushdown",
+"tempo":40,
+"descanso":15,
+"video":"tricepspushdown.mp4",
+"equipamento":"Multi"
+}
+,
+{
+"nome":"Quad stretch",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Thoracic rotation",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Hamstring stretch",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Quad stretch",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Hamstring stretch",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+,
+{
+"nome":"Thoracic rotation",
+"tempo":30,
+"descanso":5,
+"video":"",
+"equipamento":"Tapete"
+}
+]

@@ -1,0 +1,421 @@
+[
+{
+"nome":"Chest press machine",
+"tempo":40,
+"descanso":15,
+"video":"Chestpressmachine.mp4"
+}
+,
+{
+"nome":"Kickback",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Chest press machine",
+"tempo":40,
+"descanso":15,
+"video":"Chestpressmachine.mp4"
+}
+,
+{
+"nome":"Lateral raise",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Fly floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Lateral raise",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Goblet squat",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Romanian deadlift",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Hammer curl",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Romanian deadlift",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Chest press floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Arnold press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Chest press floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Seated row",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Romanian deadlift",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Shoulder press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Fly floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Arnold press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Chest press floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Arnold press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Triceps extension",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Triceps extension",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Romanian deadlift",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Shoulder press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Biceps curl",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Romanian deadlift",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Kickback",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Bent over row",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Triceps pushdown",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Fly floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Arnold press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Front raise",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Chest press machine",
+"tempo":40,
+"descanso":15,
+"video":"Chestpressmachine.mp4"
+}
+,
+{
+"nome":"Romanian deadlift",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Triceps extension",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Shoulder press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Arnold press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Fly floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Front raise",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Arnold press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Hammer curl",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Triceps extension",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Arnold press",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Goblet squat",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Cable fly",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Lateral raise",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Lateral raise",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Chest press floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Cable fly",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Fly floor",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Romanian deadlift",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Hammer curl",
+"tempo":40,
+"descanso":15,
+"video":""
+}
+,
+{
+"nome":"Chest stretch",
+"tempo":30,
+"descanso":5,
+"video":""
+}
+,
+{
+"nome":"Shoulder stretch",
+"tempo":30,
+"descanso":5,
+"video":""
+}
+,
+{
+"nome":"Child pose",
+"tempo":30,
+"descanso":5,
+"video":""
+}
+,
+{
+"nome":"Quad stretch",
+"tempo":30,
+"descanso":5,
+"video":""
+}
+,
+{
+"nome":"Alongamento peitoral",
+"tempo":30,
+"descanso":5,
+"video":""
+}
+,
+{
+"nome":"Quad stretch",
+"tempo":30,
+"descanso":5,
+"video":""
+}
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>HomeGym Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="menu">
+    <h1>Selecionar treino</h1>
+    <div id="lista"></div>
+</div>
+
+<div id="player">
+
+    <div id="top">
+        <div id="exercise"></div>
+        <div id="phase"></div>
+    </div>
+
+    <div id="middle">
+
+        <div id="videoBox">
+            <video id="video" muted loop playsinline></video>
+        </div>
+
+        <div id="timerSide">
+            <div class="ring">
+                <svg viewBox="0 0 220 220">
+                    <circle class="ring-bg" cx="110" cy="110" r="95"/>
+                    <circle class="ring-fg" cx="110" cy="110" r="95" id="progressCircle"/>
+                </svg>
+                <div id="timer">0</div>
+            </div>
+
+            <div id="globaltime">
+                <span id="elapsed">00:00</span> /
+                <span id="remaining">00:00</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="next"></div>
+
+    <div id="coachBox" class="coach hidden">
+        <div id="coachType"></div>
+        <div id="coachText"></div>
+    </div>
+
+    <div id="controls">
+        <button onclick="startWorkout()">▶</button>
+        <button onclick="pauseWorkout()">⏸</button>
+        <button onclick="nextExercise()">⏭</button>
+        <button onclick="voltarMenu()">⬅</button>
+    </div>
+
+</div>
+
+<div id="bigcount"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

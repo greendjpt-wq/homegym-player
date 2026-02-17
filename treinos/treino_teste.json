@@ -1,0 +1,781 @@
+[
+{
+"nome":"Chest press machine",
+"grupo":"Peito",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"chestpressmachine.mp4",
+"Dicas_Tecnica":"empurrar controlado",
+"Erros_Comuns":"bloquear cotovelos",
+"Cuidados":"ombros para trás"
+}
+,
+{
+"nome":"Shoulder press",
+"grupo":"Ombros",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"shoulderpress.mp4",
+"Dicas_Tecnica":"core firme",
+"Erros_Comuns":"arquear lombar",
+"Cuidados":"não bloquear cotovelos"
+}
+,
+{
+"nome":"Band row",
+"grupo":"Glúteos",
+"equipamento":"Elástico",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"Execução controlada",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Diamond push up",
+"grupo":"Tríceps",
+"equipamento":"Tapete",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"diamondpushup.mp4",
+"Dicas_Tecnica":"cotovelos próximos do corpo",
+"Erros_Comuns":"abrir cotovelos",
+"Cuidados":"reduzir amplitude se dor"
+}
+,
+{
+"nome":"Cable curl",
+"grupo":"Bíceps",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"cablecurl.mp4",
+"Dicas_Tecnica":"cotovelos fixos",
+"Erros_Comuns":"balançar corpo",
+"Cuidados":"punhos neutros"
+}
+,
+{
+"nome":"Front raise",
+"grupo":"Ombros",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"frontraise.mp4",
+"Dicas_Tecnica":"subida controlada",
+"Erros_Comuns":"usar impulso",
+"Cuidados":"evitar dor anterior ombro"
+}
+,
+{
+"nome":"Lat pulldown",
+"grupo":"Costas",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"latpulldown.mp4",
+"Dicas_Tecnica":"puxar com as costas e peito aberto",
+"Erros_Comuns":"puxar atrás do pescoço",
+"Cuidados":"evitar sobrecarga cervical"
+}
+,
+{
+"nome":"Prancha",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":15,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"alinhado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Cable curl",
+"grupo":"Bíceps",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"cablecurl.mp4",
+"Dicas_Tecnica":"cotovelos fixos",
+"Erros_Comuns":"balançar corpo",
+"Cuidados":"punhos neutros"
+}
+,
+{
+"nome":"Lateral raise",
+"grupo":"Ombros",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"lateralraise.mp4",
+"Dicas_Tecnica":"levantar até linha dos ombros",
+"Erros_Comuns":"balançar tronco",
+"Cuidados":"peso leve"
+}
+,
+{
+"nome":"Bent over row",
+"grupo":"Costas",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"bentoverrow.mp4",
+"Dicas_Tecnica":"escápulas juntas",
+"Erros_Comuns":"encurvar costas",
+"Cuidados":"pescoço neutro"
+}
+,
+{
+"nome":"Prancha",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":15,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"alinhado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Goblet squat",
+"grupo":"Quadríceps",
+"equipamento":"Halteres",
+"tempo":30,
+"descanso":20,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"joelhos fora",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Rotação ombros",
+"grupo":"Ombros",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"mov lento",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Lat pulldown",
+"grupo":"Costas",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"latpulldown.mp4",
+"Dicas_Tecnica":"puxar com as costas e peito aberto",
+"Erros_Comuns":"puxar atrás do pescoço",
+"Cuidados":"evitar sobrecarga cervical"
+}
+,
+{
+"nome":"Push up",
+"grupo":"Peito",
+"equipamento":"Tapete",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"pushup.mp4",
+"Dicas_Tecnica":"corpo alinhado",
+"Erros_Comuns":"bacia cair",
+"Cuidados":"ombros não colapsar"
+}
+,
+{
+"nome":"Agachamento leve",
+"grupo":"Quadríceps",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Círculos braços",
+"grupo":"Ombros",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"circulosbracos.mp4",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Lat pulldown",
+"grupo":"Costas",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"latpulldown.mp4",
+"Dicas_Tecnica":"puxar com as costas e peito aberto",
+"Erros_Comuns":"puxar atrás do pescoço",
+"Cuidados":"evitar sobrecarga cervical"
+}
+,
+{
+"nome":"Crab walk",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"crabwalk.mp4",
+"Dicas_Tecnica":"empurrar pelo chão",
+"Erros_Comuns":"ancorar pescoço",
+"Cuidados":"cuidado ombros"
+}
+,
+{
+"nome":"Prancha",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":15,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"alinhado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Diamond push up",
+"grupo":"Tríceps",
+"equipamento":"Tapete",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"diamondpushup.mp4",
+"Dicas_Tecnica":"cotovelos próximos do corpo",
+"Erros_Comuns":"abrir cotovelos",
+"Cuidados":"reduzir amplitude se dor"
+}
+,
+{
+"nome":"Butterfly Press",
+"grupo":"Peito",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"butterfly_press.mp4",
+"Dicas_Tecnica":"escápulas retraídas",
+"Erros_Comuns":"fechar demasiado rápido",
+"Cuidados":"carga moderada"
+}
+,
+{
+"nome":"Plank shoulder taps",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"plankshouldertaps.mp4",
+"Dicas_Tecnica":"quadris estáveis",
+"Erros_Comuns":"rodar o tronco",
+"Cuidados":"punhos alinhados"
+}
+,
+{
+"nome":"Biceps curl",
+"grupo":"Bíceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"bicepscurl.mp4",
+"Dicas_Tecnica":"subida lenta",
+"Erros_Comuns":"movimento incompleto",
+"Cuidados":"punhos neutros"
+}
+,
+{
+"nome":"Front raise",
+"grupo":"Ombros",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"frontraise.mp4",
+"Dicas_Tecnica":"subida controlada",
+"Erros_Comuns":"usar impulso",
+"Cuidados":"evitar dor anterior ombro"
+}
+,
+{
+"nome":"Elevação joelhos alternada",
+"grupo":"Cardio",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Bear crawl",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"bearcrawl.mp4",
+"Dicas_Tecnica":"movimento lento e coordenado",
+"Erros_Comuns":"andar demasiado rápido",
+"Cuidados":"manter coluna neutra"
+}
+,
+{
+"nome":"Hammer curl",
+"grupo":"Bíceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"hammercurl.mp4",
+"Dicas_Tecnica":"cotovelos fixos",
+"Erros_Comuns":"balançar corpo",
+"Cuidados":"carga adequada"
+}
+,
+{
+"nome":"Caminhada ponta pés",
+"grupo":"Gémeos",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Chest press floor",
+"grupo":"Peito",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"chestpressfloor.mp4",
+"Dicas_Tecnica":"cotovelos a 45°",
+"Erros_Comuns":"abrir demasiado braços",
+"Cuidados":"controlar descida"
+}
+,
+{
+"nome":"Prancha",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":15,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"alinhado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Kickback",
+"grupo":"Tríceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"kickback.mp4",
+"Dicas_Tecnica":"braço fixo",
+"Erros_Comuns":"movimento curto",
+"Cuidados":"peso leve"
+}
+,
+{
+"nome":"Biceps curl",
+"grupo":"Bíceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"bicepscurl.mp4",
+"Dicas_Tecnica":"subida lenta",
+"Erros_Comuns":"movimento incompleto",
+"Cuidados":"punhos neutros"
+}
+,
+{
+"nome":"Chest press machine",
+"grupo":"Peito",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"chestpressmachine.mp4",
+"Dicas_Tecnica":"empurrar controlado",
+"Erros_Comuns":"bloquear cotovelos",
+"Cuidados":"ombros para trás"
+}
+,
+{
+"nome":"Inclinações laterais",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Triceps pushdown",
+"grupo":"Tríceps",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"tricepspushdown.mp4",
+"Dicas_Tecnica":"extensão completa",
+"Erros_Comuns":"abrir cotovelos",
+"Cuidados":"sem dor no cotovelo"
+}
+,
+{
+"nome":"Shoulder press",
+"grupo":"Ombros",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"shoulderpress.mp4",
+"Dicas_Tecnica":"core firme",
+"Erros_Comuns":"arquear lombar",
+"Cuidados":"não bloquear cotovelos"
+}
+,
+{
+"nome":"Butterfly Press",
+"grupo":"Peito",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"butterfly_press.mp4",
+"Dicas_Tecnica":"escápulas retraídas",
+"Erros_Comuns":"fechar demasiado rápido",
+"Cuidados":"carga moderada"
+}
+,
+{
+"nome":"Rotações tronco",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Cable curl",
+"grupo":"Bíceps",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"cablecurl.mp4",
+"Dicas_Tecnica":"cotovelos fixos",
+"Erros_Comuns":"balançar corpo",
+"Cuidados":"punhos neutros"
+}
+,
+{
+"nome":"Triceps extension",
+"grupo":"Tríceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"tricepsextension.mp4",
+"Dicas_Tecnica":"cotovelos fechados",
+"Erros_Comuns":"abrir cotovelos",
+"Cuidados":"evitar dor cotovelo"
+}
+,
+{
+"nome":"Chest press floor",
+"grupo":"Peito",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"chestpressfloor.mp4",
+"Dicas_Tecnica":"cotovelos a 45°",
+"Erros_Comuns":"abrir demasiado braços",
+"Cuidados":"controlar descida"
+}
+,
+{
+"nome":"Rotações tronco",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Hammer curl",
+"grupo":"Bíceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"hammercurl.mp4",
+"Dicas_Tecnica":"cotovelos fixos",
+"Erros_Comuns":"balançar corpo",
+"Cuidados":"carga adequada"
+}
+,
+{
+"nome":"Triceps pushdown",
+"grupo":"Tríceps",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"tricepspushdown.mp4",
+"Dicas_Tecnica":"extensão completa",
+"Erros_Comuns":"abrir cotovelos",
+"Cuidados":"sem dor no cotovelo"
+}
+,
+{
+"nome":"Bear crawl",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"bearcrawl.mp4",
+"Dicas_Tecnica":"movimento lento e coordenado",
+"Erros_Comuns":"andar demasiado rápido",
+"Cuidados":"manter coluna neutra"
+}
+,
+{
+"nome":"Chest press machine",
+"grupo":"Peito",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"chestpressmachine.mp4",
+"Dicas_Tecnica":"empurrar controlado",
+"Erros_Comuns":"bloquear cotovelos",
+"Cuidados":"ombros para trás"
+}
+,
+{
+"nome":"Elevação joelhos alternada",
+"grupo":"Cardio",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Kickback",
+"grupo":"Tríceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"kickback.mp4",
+"Dicas_Tecnica":"braço fixo",
+"Erros_Comuns":"movimento curto",
+"Cuidados":"peso leve"
+}
+,
+{
+"nome":"Hammer curl",
+"grupo":"Bíceps",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"hammercurl.mp4",
+"Dicas_Tecnica":"cotovelos fixos",
+"Erros_Comuns":"balançar corpo",
+"Cuidados":"carga adequada"
+}
+,
+{
+"nome":"Inclinações laterais",
+"grupo":"Core",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Treino",
+"video":"",
+"Dicas_Tecnica":"controlado",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Shoulder press",
+"grupo":"Ombros",
+"equipamento":"Halteres",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"shoulderpress.mp4",
+"Dicas_Tecnica":"core firme",
+"Erros_Comuns":"arquear lombar",
+"Cuidados":"não bloquear cotovelos"
+}
+,
+{
+"nome":"Triceps pushdown",
+"grupo":"Tríceps",
+"equipamento":"Multi",
+"tempo":40,
+"descanso":15,
+"estado":"Treino",
+"video":"tricepspushdown.mp4",
+"Dicas_Tecnica":"extensão completa",
+"Erros_Comuns":"abrir cotovelos",
+"Cuidados":"sem dor no cotovelo"
+}
+,
+{
+"nome":"Hip flexor stretch",
+"grupo":"Mobilidade",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Cooldown",
+"video":"",
+"Dicas_Tecnica":"Execução controlada",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Shoulder stretch",
+"grupo":"Mobilidade",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Cooldown",
+"video":"",
+"Dicas_Tecnica":"Execução controlada",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Alongamento peitoral",
+"grupo":"Peito",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Cooldown",
+"video":"",
+"Dicas_Tecnica":"respirar",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Child pose",
+"grupo":"Mobilidade",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Cooldown",
+"video":"",
+"Dicas_Tecnica":"Execução controlada",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Hamstring stretch",
+"grupo":"Mobilidade",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Cooldown",
+"video":"",
+"Dicas_Tecnica":"Execução controlada",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+,
+{
+"nome":"Alongamento peitoral",
+"grupo":"Peito",
+"equipamento":"Tapete",
+"tempo":30,
+"descanso":5,
+"estado":"Cooldown",
+"video":"",
+"Dicas_Tecnica":"respirar",
+"Erros_Comuns":"Movimento descontrolado",
+"Cuidados":"Evitar dor"
+}
+]
