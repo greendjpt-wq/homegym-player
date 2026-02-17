@@ -211,15 +211,20 @@ function iniciarCoach(e){
 //////////////////// HELPERS ////////////////////
 
 function icone(eq){
-    if(!eq)return"";
-    eq=eq.toLowerCase();
-    if(eq.includes("halter"))return"<img class='icon' src='icons/halteres.svg'>";
-    if(eq.includes("tapete"))return"<img class='icon' src='icons/tapete.svg'>";
-    if(eq.includes("multi"))return"<img class='icon' src='icons/multi.svg'>";
-    if(eq.includes("elast"))return"<img class='icon' src='icons/elastico.svg'>";
-    if(eq.includes("box"))return"<img class='icon' src='icons/box.svg'>";
-    return"<img class='icon' src='icons/peso.svg'>";
+    if(!eq) return "";
+
+    eq = eq.toLowerCase();
+
+    let file="peso.svg";
+    if(eq.includes("halter")) file="halteres.svg";
+    if(eq.includes("tapete")) file="tapete.svg";
+    if(eq.includes("multi")) file="multi.svg";
+    if(eq.includes("elast")) file="elastico.svg";
+    if(eq.includes("box")) file="box.svg";
+
+    return "<img class='icon' src='"+BASE_PATH+"icons/"+file+"'>";
 }
+
 
 function format(s){
     let m=Math.floor(s/60);
