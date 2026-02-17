@@ -98,17 +98,23 @@ margin-top:0.5vh;
 
 /* BIG COUNT */
 #bigcount{
-position:fixed;
-inset:0;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:22vw;
-background:rgba(0,0,0,0.75);
-opacity:0;
-transition:.15s;
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22vw;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    pointer-events:none;   /* <- isto é a chave */
+    transition:.15s;
+    z-index:9999;
 }
-#bigcount.show{opacity:1}
+
+
+
+#bigcount.show{
+	opacity:1}
 
 /* CORES DE ESTADO */
 body.work{background:#111;}
@@ -129,3 +135,7 @@ margin-right:auto;
 .coach.dica{background:#003b6f;color:#7fd1ff;}
 .coach.erro{background:#5a0000;color:#ff9b9b;}
 .coach.cuidado{background:#5a4a00;color:#ffe38a;}
+
+#coachBox{
+    pointer-events:none;
+}
