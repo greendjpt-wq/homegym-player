@@ -1,8 +1,12 @@
+html,body{
+    height:100%;
+}
+
 body{
-background:#111;
-color:white;
-font-family:Arial, Helvetica, sans-serif;
-margin:0;
+    background:red !important;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
 }
 
 /* MENU */
@@ -13,96 +17,154 @@ margin:0;
     z-index:5;
 }
 
-
 .item{
-font-size:38px;
-padding:18px;
-margin:12px auto;
-width:60%;
-background:#222;
-border-radius:12px;
-cursor:pointer;
+    font-size:38px;
+    padding:18px;
+    margin:12px auto;
+    width:60%;
+    background:#222;
+    border-radius:12px;
+    cursor:pointer;
 }
 
 /* PLAYER */
+
 #player{
     display:none;
     position:fixed;
     inset:0;
-    padding:2vh 3vw;
+    width:100vw;
+    height:100vh;
+    padding:3vh 4vw;
     box-sizing:border-box;
 
-    height:100vh;
-
-    /* GRID REAL */
-    display:grid;
-    grid-template-rows: 18% 64% 18%;
+    display:flex;
+    flex-direction:column;
 }
 
+/* TOPO */
 
-
-#top{text-align:center;}
+#top{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    height:12vh;
+}
 
 #exercise{
-font-size:5vh;
-font-weight:600;
+    font-size:3.2vh;   /* reduzido */
+    font-weight:700;
 }
 
 #phase{
-font-size:2.5vh;
-color:#aaa;
+    margin-top:10px;
+    font-size:1.2em;
+    color:#aaa;
 }
+
+/* MEIO */
 
 #middle{
-    display:grid;
-    grid-template-columns: 1fr 0.9fr;
+    display:flex;
+    flex:1;
     align-items:center;
-    justify-items:center;
-    height:100%;
 }
 
+/* ICONES */
 
+.icon{
+    height:4vh;
+    vertical-align:middle;
+    margin-right:1vh;
+    filter:invert(100%);
+}
+
+/* VIDEO */
+
+#videoBox{
+    flex:2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
 #video{
-max-width:95%;
-max-height:60vh;
-border-radius:18px;
+    width:100%;
+    height:100%;
+    max-height:70vh;
+    object-fit:contain;   /* nunca corta laterais */
+    border-radius:24px;
 }
 
 /* TIMER */
+
+#timerSide{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;     /* encostado à direita */
+    padding-right:2vw;
+}
+
 .ring{
-position:relative;
-width:min(32vh, 32vw);
-height:min(32vh, 32vw);
-margin:auto;
+    position:relative;
+    width:min(32vh, 420px);
+    height:min(32vh, 420px);
+}
+
+.ring svg{
+    width:100%;
+    height:100%;
+    transform:rotate(-90deg);
+    transform-origin:50% 50%;
 }
 
 #timer{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-font-size:9vh;
-font-weight:bold;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:4.5em;
+    font-weight:bold;
 }
 
-.ring-bg{stroke:#333;fill:none;stroke-width:12;}
-.ring-fg{stroke:#00e0ff;fill:none;stroke-width:12;stroke-linecap:round;stroke-dasharray:596;stroke-dashoffset:596;}
+.ring-bg{
+    stroke:#333;
+    fill:none;
+    stroke-width:12;
+}
+
+.ring-fg{
+    stroke:#00e0ff;
+    fill:none;
+    stroke-width:12;
+    stroke-linecap:round;
+    stroke-dasharray:596;
+    stroke-dashoffset:596;
+}
 
 #globaltime{
-text-align:center;
-margin-top:2vh;
-font-size:2.3vh;
-color:#bbb;
+    margin-top:2vh;
+    font-size:2vh;
+    color:#bbb;
+    text-align:right;
 }
 
+/* PRÓXIMO */
+
 #next{
-text-align:center;
-font-size:2.8vh;
-margin-top:0.5vh;
+    position:absolute;
+    right:3vw;
+    top:18%;
+    text-align:right;
+    font-size:clamp(16px,1.3vw,24px);
 }
 
 /* BIG COUNT */
+
 #bigcount{
     position:fixed;
     inset:0;
@@ -110,32 +172,35 @@ margin-top:0.5vh;
     justify-content:center;
     align-items:center;
     font-size:22vw;
-    background:rgba(0,0,0,0.7);
+    font-weight:900;
+    background:rgba(0,0,0,0.85);
     opacity:0;
-    pointer-events:none;   /* <- isto é a chave */
+    pointer-events:none;
     transition:.15s;
     z-index:9999;
 }
 
-
-
 #bigcount.show{
-	opacity:1}
+    opacity:1;
+}
 
-/* CORES DE ESTADO */
+/* CORES */
+
 body.work{background:#111;}
 body.rest{background:#063a2d;}
 body.final{background:#5a0000;}
 
 /* COACH */
+
 .coach{
-margin-top:1vh;
-padding:1.2vh 2vh;
-border-radius:18px;
-font-size:2.3vh;
-max-width:70%;
-margin-left:auto;
-margin-right:auto;
+    margin-top:1vh;
+    padding:1.2vh 2vh;
+    border-radius:18px;
+    font-size:2.1vh;
+    max-width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
 }
 
 .coach.dica{background:#003b6f;color:#7fd1ff;}
@@ -143,5 +208,34 @@ margin-right:auto;
 .coach.cuidado{background:#5a4a00;color:#ffe38a;}
 
 #coachBox{
-    pointer-events:none;
+    width:70%;
+    margin:0 auto;
+    margin-top:10px;
+    padding:14px 20px;
+    border-radius:16px;
+    text-align:center;
+	position:relative;
+    z-index:20;
+    margin-bottom:8vh;   /* sobe acima dos botões */
+}
+
+/* BOTÕES */
+
+#controls{
+    position:fixed;
+    bottom:3vh;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:2vw;
+}
+
+#controls button{
+    font-size:42px;
+    padding:16px 26px;
+    border-radius:14px;
+    border:none;
+    background:#222;
+    color:white;
+    cursor:pointer;
 }
