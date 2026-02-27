@@ -105,7 +105,7 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:flex-end;     /* encostado à direita */
+    align-items:center;   /* agora centrado */
     padding-right:2vw;
 }
 
@@ -194,10 +194,10 @@ body.final{background:#5a0000;}
 
 .coach{
     margin-top:1vh;
-    padding:1.2vh 2vh;
+    padding:1.4vh 2vh;
     border-radius:18px;
-    font-size:2.1vh;
-    max-width:70%;
+    font-size:2.4vh;
+    max-width:100%;
     margin-left:auto;
     margin-right:auto;
     text-align:center;
@@ -212,9 +212,9 @@ body.final{background:#5a0000;}
 .coach.cuidado{background:#5a4a00;color:#ffe38a;}
 
 #coachBox{
-    width:100%;
+    width:min(32vh, 420px);   /* mesma largura do círculo */
     margin-top:2vh;
-    padding:14px 20px;
+    padding:16px 22px;
     border-radius:16px;
     text-align:center;
 }
@@ -238,4 +238,10 @@ body.final{background:#5a0000;}
     background:#222;
     color:white;
     cursor:pointer;
+}
+
+#coachType{
+    font-weight:700;
+    margin-bottom:6px;
+    letter-spacing:1px;
 }
