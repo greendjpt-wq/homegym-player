@@ -212,15 +212,11 @@ body.final{background:#5a0000;}
 .coach.cuidado{background:#5a4a00;color:#ffe38a;}
 
 #coachBox{
-    width:70%;
-    margin:0 auto;
-    margin-top:10px;
+    width:100%;
+    margin-top:2vh;
     padding:14px 20px;
     border-radius:16px;
     text-align:center;
-	position:relative;
-    z-index:20;
-    margin-bottom:8vh;   /* sobe acima dos botões */
 }
 
 /* BOTÕES */
