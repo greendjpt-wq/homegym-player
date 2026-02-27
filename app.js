@@ -166,7 +166,20 @@ function trocar(){
 
 function atualizarUI(){
 
-    const video=document.getElementById("video");
+    document.body.classList.remove("work","rest","final");
+
+	if(current >= treino.length){
+		document.body.classList.add("final");
+	}
+	else if(emExercicio){
+		document.body.classList.add("work");
+	}
+	else{
+		document.body.classList.add("rest");
+	}
+
+	
+	const video=document.getElementById("video");
     const e=treino[current];
 
     if(emExercicio){
