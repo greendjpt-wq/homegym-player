@@ -156,10 +156,9 @@ body{
 /* PRÓXIMO */
 
 #next{
-    position:absolute;
-    right:3vw;
-    top:18%;
-    text-align:right;
+    width:min(32vh, 420px);
+    margin-top:2vh;
+    text-align:center;
     font-size:clamp(16px,1.3vw,24px);
 }
 
