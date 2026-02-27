@@ -226,11 +226,32 @@ function atualizarTimer(){
 }
 
 function mostrarProximo(){
-    let n=document.getElementById("next");
-    if(current<treino.length-1){
-        let p=treino[current+1];
-        n.innerHTML="A seguir:<br><b>"+p.nome+"</b><br>"+icone(p.equipamento);
-    }else n.innerText="Último exercício";
+
+    let n = document.getElementById("next");
+
+    if(current < treino.length - 1){
+
+        let p = treino[current + 1];
+
+        let equipamentoHTML = "";
+
+        if(p.equipamento){
+            equipamentoHTML = "<div class='nextEquip'>" +
+                              icone(p.equipamento) +
+                              "<span>" + p.equipamento + "</span>" +
+                              "</div>";
+        }
+
+        n.innerHTML =
+            "<div class='nextTitle'>A seguir:</div>" +
+            "<div class='nextName'><b>" + p.nome + "</b></div>" +
+            equipamentoHTML;
+
+    } else {
+
+        n.innerText = "Último exercício";
+
+    }
 }
 
 //////////////////// COACH ////////////////////

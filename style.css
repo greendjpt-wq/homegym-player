@@ -244,3 +244,23 @@ body.final{background:#5a0000;}
     margin-bottom:6px;
     letter-spacing:1px;
 }
+
+.nextTitle{
+    font-size:0.9em;
+    opacity:0.7;
+    margin-bottom:4px;
+}
+
+.nextName{
+    font-size:1.1em;
+    margin-bottom:6px;
+}
+
+.nextEquip{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    font-size:0.95em;
+    opacity:0.9;
+}
