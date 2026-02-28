@@ -12,6 +12,8 @@ let tempoTreinado=0;
 let ultimoTick=null;
 let coachTimer=null;
 let coachIndex=0;
+let inicioFase = null;
+let ultimoBeep = null;
 
 const beep=new Audio("sounds/beep.wav");
 const end=new Audio("sounds/end.wav");
@@ -116,38 +118,57 @@ function executar(){
 
     let e=treino[current];
 
-    tempo=emExercicio?e.tempo:e.descanso;
-    duracaoAtual=tempo;
+	if(emExercicio){
+		faseAtual = "exercicio";
+		tempo = e.tempo;
+	}else{
+		faseAtual = "descanso";
+		tempo = e.descanso;
+	}
+
+	duracaoAtual = tempo;
+	inicioFase = Date.now();
+	ultimoBeep = null;
 
     atualizarUI();
 
     clearInterval(coachTimer);
     if(emExercicio) iniciarCoach(e);
 
-    intervalo=setInterval(()=>{
+    intervalo = setInterval(()=>{
 
-        if(pausado){
-            ultimoTick=Date.now();
-            return;
-        }
+		if(pausado) return;
 
-        tempo--;
+		let decorrido = Math.floor((Date.now() - inicioFase)/1000);
+		let restante = duracaoAtual - decorrido;
 
-        if(ultimoTick)
-            tempoTreinado+=Math.floor((Date.now()-ultimoTick)/1000);
-        ultimoTick=Date.now();
+		if(restante < 0) restante = 0;
 
-        if(tempo<=5 && tempo>0)play(beep);
+		tempo = restante;
 
-        atualizarTimer();
+		if(
+			faseAtual === "exercicio" &&
+			restante > 0 &&
+			restante <= 5 &&
+			restante !== ultimoBeep
+		){
+			play(beep);
+			ultimoBeep = restante;
+		}
 
-        if(tempo<=0)trocar();
+		atualizarTimer();
 
-    },1000);
+		if(restante <= 0){
+			clearInterval(intervalo);
+			trocar();
+		}
+
+	}, 200);
 }
 
 function trocar(){
 
+	clearInterval(intervalo);
     if(emExercicio){
         play(end);
         emExercicio=false;
@@ -258,21 +279,39 @@ function mostrarProximo(){
 
 function iniciarCoach(e){
 
-    let box=document.getElementById("coachBox");
-    let tipo=document.getElementById("coachType");
-    let texto=document.getElementById("coachText");
+    let box = document.getElementById("coachBox");
+    let tipo = document.getElementById("coachType");
+    let texto = document.getElementById("coachText");
 
-    const msgs=[e.Dicas_Tecnica,e.Erros_Comuns,e.Cuidados].filter(t=>t);
+    const mensagens = [
+        {tipo:"dica", texto:e.Dicas_Tecnica},
+        {tipo:"erro", texto:e.Erros_Comuns},
+        {tipo:"cuidado", texto:e.Cuidados}
+    ].filter(m => m.texto);
 
-    if(msgs.length===0){box.classList.add("hidden");return;}
+    if(mensagens.length === 0){
+        box.classList.add("hidden");
+        return;
+    }
 
     box.classList.remove("hidden");
 
-    coachIndex=0;
-    coachTimer=setInterval(()=>{
-        tipo.innerText=["DICA","ERRO","CUIDADO"][coachIndex%3];
-        texto.innerText=msgs[coachIndex%msgs.length];
+    coachIndex = 0;
+
+    clearInterval(coachTimer);
+
+    coachTimer = setInterval(()=>{
+
+        let m = mensagens[coachIndex % mensagens.length];
+
+        box.classList.remove("dica","erro","cuidado");
+        box.classList.add(m.tipo);
+
+        tipo.innerText = m.tipo.toUpperCase();
+        texto.innerText = m.texto;
+
         coachIndex++;
+
     },6000);
 }
 

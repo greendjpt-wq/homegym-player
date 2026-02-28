@@ -54,8 +54,9 @@ body{
 }
 
 #exercise{
-    font-size:3.2vh;   /* reduzido */
+    font-size:clamp(28px, 5vh, 70px);
     font-weight:700;
+    line-height:1.1;
 }
 
 #phase{
@@ -157,7 +158,7 @@ body{
 
 #next{
     width:min(32vh, 420px);
-    margin-top:2vh;
+    margin-top:1.5vh;
     text-align:center;
     font-size:clamp(16px,1.3vw,24px);
 }
@@ -192,14 +193,24 @@ body.final{background:#5a0000;}
 /* COACH */
 
 .coach{
-    margin-top:1vh;
     padding:1.4vh 2vh;
     border-radius:18px;
     font-size:2.4vh;
     max-width:100%;
-    margin-left:auto;
-    margin-right:auto;
     text-align:center;
+    background:transparent;   /* sem fundo pesado */
+}
+
+.coach.dica{
+    color:#00ff88;   /* verde vivo */
+}
+
+.coach.erro{
+    color:#ff4d4d;   /* vermelho */
+}
+
+.coach.cuidado{
+    color:#ffd54d;   /* amarelo */
 }
 
 .hidden{
