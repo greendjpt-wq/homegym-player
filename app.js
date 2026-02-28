@@ -14,6 +14,9 @@ let coachTimer=null;
 let coachIndex=0;
 let inicioFase = null;
 let ultimoBeep = null;
+let inicioTreinoReal = null;
+let tempoPausadoTotal = 0;
+let momentoPauseGlobal = null;
 
 const beep=new Audio("sounds/beep.wav");
 const end=new Audio("sounds/end.wav");
@@ -41,10 +44,7 @@ async function carregarLista(){
     });
 }
 
-
-
 window.addEventListener("DOMContentLoaded", carregarLista);
-
 
 async function carregarTreino(nome){
 
@@ -68,39 +68,46 @@ async function carregarTreino(nome){
     treino.forEach(e=> duracaoTotalTreino += e.tempo + e.descanso);
 
     document.getElementById("menu").style.display="none";
-	document.getElementById("player").style.display="flex";
-    document.getElementById("player").style.opacity="1";
-    document.getElementById("player").style.pointerEvents="auto";
-	
-	// preparar primeiro exercício
-	current = 0;
-	tempo = 0;
-	emExercicio = true;
-	pausado = true;
-	treinoIniciado = false;
-	tempoTreinado = 0;
-	ultimoTick = null;
+    document.getElementById("player").style.display="flex";
 
-	atualizarUI();   // ← MOSTRAR logo primeiro exercício
+    current = 0;
+    tempo = 0;
+    emExercicio = true;
+    pausado = true;
+    treinoIniciado = false;
 
+    atualizarUI();
 }
-
-
 
 //////////////////// WORKOUT ////////////////////
 
 function startWorkout(){
+
     if(!treinoIniciado){
         treinoIniciado=true;
         pausado=false;
-        tempoInicioTreino=Date.now();
+        inicioTreinoReal = Date.now();
         executar();
         return;
     }
-    pausado=false;
+
+    if(pausado){
+        // compensar pausa global
+        tempoPausadoTotal += Date.now() - momentoPauseGlobal;
+
+        // compensar pausa da fase
+        inicioFase = Date.now() - (duracaoAtual - tempo)*1000;
+
+        pausado=false;
+    }
 }
 
-function pauseWorkout(){pausado=true}
+function pauseWorkout(){
+    if(!pausado){
+        pausado=true;
+        momentoPauseGlobal = Date.now();
+    }
+}
 
 function nextExercise(){current++;executar()}
 function voltarMenu(){location.reload()}
@@ -118,17 +125,15 @@ function executar(){
 
     let e=treino[current];
 
-	if(emExercicio){
-		faseAtual = "exercicio";
-		tempo = e.tempo;
-	}else{
-		faseAtual = "descanso";
-		tempo = e.descanso;
-	}
+    if(emExercicio){
+        tempo = e.tempo;
+    }else{
+        tempo = e.descanso;
+    }
 
-	duracaoAtual = tempo;
-	inicioFase = Date.now();
-	ultimoBeep = null;
+    duracaoAtual = tempo;
+    inicioFase = Date.now();
+    ultimoBeep = null;
 
     atualizarUI();
 
@@ -137,38 +142,38 @@ function executar(){
 
     intervalo = setInterval(()=>{
 
-		if(pausado) return;
+        if(pausado) return;
 
-		let decorrido = Math.floor((Date.now() - inicioFase)/1000);
-		let restante = duracaoAtual - decorrido;
+        let decorrido = Math.floor((Date.now() - inicioFase)/1000);
+        let restante = duracaoAtual - decorrido;
+        if(restante < 0) restante = 0;
 
-		if(restante < 0) restante = 0;
+        tempo = restante;
 
-		tempo = restante;
+        if(
+            emExercicio &&
+            restante > 0 &&
+            restante <= 5 &&
+            restante !== ultimoBeep
+        ){
+            play(beep);
+            ultimoBeep = restante;
+        }
 
-		if(
-			faseAtual === "exercicio" &&
-			restante > 0 &&
-			restante <= 5 &&
-			restante !== ultimoBeep
-		){
-			play(beep);
-			ultimoBeep = restante;
-		}
+        atualizarTimer();
 
-		atualizarTimer();
+        if(restante <= 0){
+            clearInterval(intervalo);
+            trocar();
+        }
 
-		if(restante <= 0){
-			clearInterval(intervalo);
-			trocar();
-		}
-
-	}, 200);
+    },200);
 }
 
 function trocar(){
 
-	clearInterval(intervalo);
+    clearInterval(intervalo);
+
     if(emExercicio){
         play(end);
         emExercicio=false;
@@ -187,39 +192,35 @@ function trocar(){
 
 function atualizarUI(){
 
-	document.body.classList.remove("work","rest","final","cooldown");
+    document.body.classList.remove("work","rest","final","cooldown");
 
-	if(current >= treino.length){
-		document.body.classList.add("final");
-	}
-	else if(emExercicio){
+    if(current >= treino.length){
+        document.body.classList.add("final");
+    }
+    else if(emExercicio){
+        if(treino[current].estado === "Cooldown"){
+            document.body.classList.add("cooldown");
+        }else{
+            document.body.classList.add("work");
+        }
+    }
+    else{
+        document.body.classList.add("rest");
+    }
 
-		if(treino[current].estado === "Cooldown"){
-			document.body.classList.add("cooldown");
-		}else{
-			document.body.classList.add("work");
-		}
-
-	}
-	else{
-		document.body.classList.add("rest");
-	}
-
-	
-	const video=document.getElementById("video");
+    const video=document.getElementById("video");
     const e=treino[current];
 
-	if(emExercicio){
+    if(emExercicio){
 
-		if(e.estado === "Cooldown"){
-			document.getElementById("exercise").innerHTML =
-				"<div class='coolLabel'>COOLDOWN</div>" +
-				e.nome;
-		}else{
-			document.getElementById("exercise").innerText = e.nome;
-		}
+        if(e.estado === "Cooldown"){
+            document.getElementById("exercise").innerHTML =
+                "<div class='coolLabel'>COOLDOWN</div>" + e.nome;
+        }else{
+            document.getElementById("exercise").innerText = e.nome;
+        }
 
-		document.getElementById("phase").innerHTML = icone(e.equipamento);
+        document.getElementById("phase").innerHTML = icone(e.equipamento);
 
         if(e.video){
             video.src="videos/"+e.video;
@@ -253,11 +254,11 @@ function atualizarTimer(){
     let percent=tempo/duracaoAtual;
     document.getElementById("progressCircle").style.strokeDashoffset=596*(1-percent);
 
-    let decorrido=Math.floor((Date.now()-tempoInicioTreino)/1000);
-    let restante=Math.max(0,duracaoTotalTreino-tempoTreinado);
+    let decorridoGlobal = Math.floor(
+    (Date.now() - inicioTreinoReal - tempoPausadoTotal)/1000
+	);
 
-    document.getElementById("elapsed").innerText=format(decorrido);
-    document.getElementById("remaining").innerText=format(restante);
+	document.getElementById("elapsed").innerText=format(decorridoGlobal);
 }
 
 function mostrarProximo(){
@@ -267,7 +268,6 @@ function mostrarProximo(){
     if(current < treino.length - 1){
 
         let p = treino[current + 1];
-
         let equipamentoHTML = "";
 
         if(p.equipamento){
@@ -283,9 +283,7 @@ function mostrarProximo(){
             equipamentoHTML;
 
     } else {
-
         n.innerText = "Último exercício";
-
     }
 }
 
@@ -309,7 +307,6 @@ function iniciarCoach(e){
     }
 
     box.classList.remove("hidden");
-
     coachIndex = 0;
 
     clearInterval(coachTimer);
@@ -343,8 +340,6 @@ function icone(eq){
 
     return "<img class='icon' src='icons/peso.svg'>";
 }
-
-
 
 function format(s){
     let m=Math.floor(s/60);
