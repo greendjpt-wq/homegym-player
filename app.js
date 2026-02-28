@@ -187,13 +187,19 @@ function trocar(){
 
 function atualizarUI(){
 
-    document.body.classList.remove("work","rest","final");
+	document.body.classList.remove("work","rest","final","cooldown");
 
 	if(current >= treino.length){
 		document.body.classList.add("final");
 	}
 	else if(emExercicio){
-		document.body.classList.add("work");
+
+		if(treino[current].estado === "Cooldown"){
+			document.body.classList.add("cooldown");
+		}else{
+			document.body.classList.add("work");
+		}
+
 	}
 	else{
 		document.body.classList.add("rest");
@@ -203,9 +209,17 @@ function atualizarUI(){
 	const video=document.getElementById("video");
     const e=treino[current];
 
-    if(emExercicio){
-        document.getElementById("exercise").innerText=e.nome;
-        document.getElementById("phase").innerHTML=icone(e.equipamento);
+	if(emExercicio){
+
+		if(e.estado === "Cooldown"){
+			document.getElementById("exercise").innerHTML =
+				"<div class='coolLabel'>COOLDOWN</div>" +
+				e.nome;
+		}else{
+			document.getElementById("exercise").innerText = e.nome;
+		}
+
+		document.getElementById("phase").innerHTML = icone(e.equipamento);
 
         if(e.video){
             video.src="videos/"+e.video;

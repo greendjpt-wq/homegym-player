@@ -273,3 +273,15 @@ body.final{background:#5a0000;}
     font-size:0.95em;
     opacity:0.9;
 }
+
+body.cooldown{
+    background:#0066ff;   /* azul forte */
+}
+
+.coolLabel{
+    font-size:0.5em;
+    font-weight:800;
+    letter-spacing:2px;
+    color:#ffffff;
+    margin-bottom:6px;
+}
